@@ -1,7 +1,0 @@
-#remove duplicates from list without inbuilt func
-l=[1,22,346,89,22,45,97,1,346,346]
-unique=[]
-for i in l:
-    if i not in unique:
-        unique.append(i)
-print(unique)    
