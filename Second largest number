@@ -1,0 +1,12 @@
+lis = [2, 4, 3, 7, 9, 1, 17, 17, 5]
+
+largest = second_largest = float('-inf')
+
+for num in lis:
+    if num > largest:
+        second_largest = largest
+        largest = num
+    elif num > second_largest and num != largest:
+        second_largest = num
+
+print(second_largest)
