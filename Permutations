@@ -1,0 +1,15 @@
+def permute(nums):
+    if len(nums) == 1:
+        return [nums[:]]  
+    
+    result = []
+    for i in range(len(nums)):
+        num = nums[i]  
+        remaining = nums[:i] + nums[i+1:]  
+        for perm in permute(remaining): 
+            result.append([num] + perm)  
+    
+    return result
+
+nums = [1, 2, 3]
+print(permute(nums))
