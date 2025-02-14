@@ -1,0 +1,17 @@
+# code for palindore
+text = "malayalam"
+result = ""
+for i in text:
+    result =  i +result
+print(result)
+
+# 2
+is_palindrom = True 
+for i in range(len(text)//2):
+    if text[i] != text[len(text)-1-i]:
+        is_palindrom = False 
+        break 
+if is_palindrom :
+    print("it is palindrom")
+else:
+    print("it is not palindrom")
